@@ -1,5 +1,5 @@
 import axios from 'axios';
-require('dotenv').config();
+
 
 
 export async function LambdaService(params) {
