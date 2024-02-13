@@ -7,7 +7,7 @@ export async function LambdaService(params) {
     let request = {};
 
     if (params && params.trim()) {
-      request = {q:params}
+      request = {q:cleanInput(params)}
     }
 
     const response = await axios.get(process.env.NEXT_PUBLIC_LAMBDA_URL, { params: request });
