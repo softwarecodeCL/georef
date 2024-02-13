@@ -10,7 +10,7 @@ export async function LambdaService(params) {
       request = {q:params}
     }
 
-    const response = await axios.get(process.env.LAMBDA_URL, { params: request });
+    const response = await axios.get(process.env.NEXT_PUBLIC_LAMBDA_URL, { params: request });
 
     return response.data;
   } catch (error) {

@@ -75,7 +75,7 @@ const MapContainer = () => {
         </Col>
         <Col md={9} className="d-flex flex-column">
         <div style={{ flex: "1" }}>
-        <LoadScript googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY} className="mt-3 mb-4">
+        <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY} className="mt-3 mb-4">
             <GoogleMap 
               mapContainerStyle={{ width: "100%", height: "100%" }}
               center={{ lat: -33.4266707, lng: -70.6202899 }}
